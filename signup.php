@@ -43,7 +43,6 @@ if (!empty($_GET["action"])) {
     }
 }
 ?>
-
 <html lang="en">
 
 <head>
@@ -61,7 +60,7 @@ if (!empty($_GET["action"])) {
     <script src="js/bootstrap.js"></script>
     <script src="popper/popper.js"></script>
     <script src="jquery/jquery.js"></script> -->
-    <title>NADAZAINA</title>
+    <title>ZAYNANADA</title>
 </head>
 
 <body>
@@ -108,11 +107,59 @@ if (!empty($_GET["action"])) {
         </ul>
     </nav>
 
+    <div class="container">
+        <div class="formDiv">
+            <form>
+                <div class="form-group"><br><br><br>
+                    <label for="fullNameInput">
+                        Full Name:
+                    </label>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="usernameInput">Username:</label>
+                    <input type="text" class="form-control" aria-describedby="Username" id="usernameInput" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">
+                        Email Address:
+                    </label>
+                    <input type="email" class="form-control" aria-describedby="Email Address" id="emailInput" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">
+                        Password:
+                    </label>
+                    <input type="password" class="form-control" aria-describedby="Password" id="passwordInput" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="address" placeholder="Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="address2" placeholder="Address 2" required>
+                </div>
 
-    <div class="content">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="city" placeholder="City" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="state" placeholder="State" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="zip" placeholder="zip" required>
+                </div>
 
+                <button type="submit" class="btn btn-outline-info">Sign Up</button>
+            </form>
+        </div>
     </div>
-
      <!-- Cart -->
      <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -184,24 +231,6 @@ if (!empty($_GET["action"])) {
             </div>
         </div>
     </div>
-
-
-    <div class="content">
-        <div class="formDiv">
-            <form>
-            <div class="form-group"><br><br><br>
-                <h1>VOILA NOTRE COMPTE DE GMAIL :<br><br>
-                zaynaabdeslami@gmail.com<br>
-                nada2012hm@gmail.com<br><br>
-                 <h1>VOILA NOTRE COMPTE DE INSTAGRAM :<br!><br><br>
-                 <a href="https://www.instagram.com/nada_hmaiddouch/">NADA HMAIDDOUCH<br>
-                 <a href="nn.jpeg"><img src="nn.jpeg" alt="ma photo">
-                 <br><br>
-                 <a href="https://www.instagram.com/zaina_salimi/?hl=fr" borde>ZAYNA ABDESLAMI</h1><br>
-                 <a href="zii.jpeg"><img src="zii.jpeg" alt="ma photo"><br><br><br></a>
-                 <h1>VOILA NOTRE COMPTE DE FACEBOOK :<br><br><br>
-                 <a href="https://www.facebook.com/rayta.fathi">ZAYNA ABDESLAMI<br><br>
-                 <a href="https://www.facebook.com/nada.hmaiddouch">NADA HMAIDDOUCH</h1></a><br><br><br>
 </body>
 
 </html>

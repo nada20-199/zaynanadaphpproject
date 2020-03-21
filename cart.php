@@ -137,7 +137,7 @@ if (!empty($_GET["action"])) {
                             <td style="text-align:right; color:hotpink"><?php echo "$ " . $item["price"]; ?></td>
                             <td style="text-align:right; color:hotpink"><?php echo "$ " . number_format($item_price, 2); ?>
                             </td>
-                            <td style="text-align:center;color:hotpink"><a href="index.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="icon-delete.jpeg" alt="Remove Item" /></a>
+                            <td style="text-align:center;color:hotpink"><a href="index.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="icon-delete.jpg" alt="Remove Item" /></a>
                             </td>
                         </tr>
                     <?php
