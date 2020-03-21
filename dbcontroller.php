@@ -9,7 +9,7 @@ class DBController {
 	
 	//  Uncomment for depoloyment
 
-	   private $host = "localhost";
+	  // private $host = "localhost";
 	// // database user and password
 	   private $user = "id12902335_zaynada";
 	   private $password = "zaynadada";
@@ -17,12 +17,12 @@ class DBController {
 	   private $database = "id12902335_shop";
 
 	// uncomment for local developement
-	  //private $host = "localhost";
+	 // private $host = "localhost";
 	// database user and password
 	 // private $user = "root";
 	 // private $password = "";
 	//schema name
-	 // private $database = "shop";
+	  // private $database = "shop";
 //
 
 

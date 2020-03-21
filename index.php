@@ -130,13 +130,13 @@ if (!empty($_GET["action"])) {
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/hayat.jpg" alt="First slide">
+                    <img class="d-block w-100" src="nada.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/d.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="nido.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/o.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="zaina.jpg" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

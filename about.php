@@ -43,6 +43,7 @@ if (!empty($_GET["action"])) {
     }
 }
 ?>
+
 <html lang="en">
 
 <head>
@@ -60,12 +61,12 @@ if (!empty($_GET["action"])) {
     <script src="js/bootstrap.js"></script>
     <script src="popper/popper.js"></script>
     <script src="jquery/jquery.js"></script> -->
-    <title>ZAINANADA</title>
+    <title>NADAZAINA</title>
 </head>
 
 <body>
 
-<nav class="navbar navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
         <a href="#" class="nav"></a>
         <ul class="nav mr-auto nav-tabs">
             <li class="nav-item active">
@@ -89,7 +90,7 @@ if (!empty($_GET["action"])) {
         <ul class="nav nav-pills">
             <!-- Show cart -->
             <li class="nav-item">
-                
+
                 <button type="button" class="nav-link btn-outline-info" data-toggle="modal" data-target="#cart">Cart</button>
             </li>
             <li class="nav-item">
@@ -107,27 +108,9 @@ if (!empty($_GET["action"])) {
         </ul>
     </nav>
 
+
     <div class="content">
-        <div class="formDiv">
-            <form>
-                <div class="form-group"><br><br><br>
-                    <label for="emailInput">
-                        Email Address:
-                    </label>
-                    <input type="email" class="form-control" aria-describedby="Email Address" id="emailInput"
-                        placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="emailInput">
-                        Message:
-                    </label>
-                    <textarea name="message" class="form-control" id="message" cols="30" rows="10">
-                </textarea>
-                </div>
-                <button type="submit" class="btn btn-outline-success">Login</button>
-            </form>
-        </div>
-    </div>
+
     </div>
 
      <!-- Cart -->
@@ -201,6 +184,21 @@ if (!empty($_GET["action"])) {
             </div>
         </div>
     </div>
+
+
+    <div class="content">
+        <div class="formDiv">
+            <form>
+            <div class="form-group"><br><br><br>
+                <h1>VOILA NOTRE COMPTE DE FACEBOOK :<br!><br><br>
+                 <a href="https://www.facebook.com/rayta.fathi">ZAYNA ABDESLAMI<br><br>
+                 <a href="https://www.facebook.com/nada.hmaiddouch">NADA HMAIDDOUCH</h1></a><br><br><br>
+                 <h1>VOILA NOTRE COMPTE DE INSTAGRAM :<br!><br><br>
+                 <a href="https://www.instagram.com/nada_hmaiddouch/">NADA HMAIDDOUCH<br>
+                 <a href="nn.jpeg"><img src="nn.jpeg" alt="ma photo">
+                 <br><br>
+                 <a href="https://www.instagram.com/zaina_salimi/?hl=fr" borde>ZAYNA ABDESLAMI</h1><br>
+                 <a href="zii.jpeg"><img src="zii.jpeg" alt="ma photo">
 </body>
 
 </html>

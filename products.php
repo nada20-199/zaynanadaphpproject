@@ -96,17 +96,17 @@ if (!empty($_GET["action"])) {
             </li>
     
             <li class="nav-item">
-                <a class="nav-link disabled" href="login.php">Login</a>
+                <a class="nav-link active" href="login.php">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="register.php">Register</a>
+                <a class="nav-link active" href="register.php">Register</a>
             </li>
             
             <li class="nav-item">
-                <a class="nav-link disabled" href="contactus.php">Contact Us</a>
+                <a class="nav-link active" href="contactus.php">Contact Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="products.php">Products</a>
+                <a class="nav-link active" href="products.php">Products</a>
             </li>
         </ul>
 
@@ -118,7 +118,7 @@ if (!empty($_GET["action"])) {
 
   <!-- Items from database -->
   <div id="product-grid">
-        <div class="txt-heading">Products</div>
+        <div class="txt-heading" style="background-color:deeppink;"><h1>Products</h1></div>
         <?php
         // tblproduc is the table where all the articles are stored
 
@@ -134,11 +134,11 @@ if (!empty($_GET["action"])) {
                 // the html element filled dynamically with each element of $product_array
         ?>
                 <div class="product-item">
-                    <form method="post" action="index.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+                    <form method="post" style="color:deeppink;" action="index.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
                         <div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"></div>
                         <div class="product-tile-footer">
                             <div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
-                            <div class="product-price"><?php echo "$" . $product_array[$key]["price"]; ?></div>
+                            <div class="product-price"><?php echo "MAD " . $product_array[$key]["price"]; ?></div>
                             <div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
                         </div>
                     </form>
