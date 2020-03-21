@@ -67,40 +67,40 @@ if (!empty($_GET["action"])) {
 
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <a href="#" class="nav"></a>
-        <ul class="nav mr-auto nav-tabs">
+        <ul class="nav mr-auto nav-tabs" style="background-color:white">
             <li class="nav-item active">
                 <a href="index.php" class="nav-link btn-outline-info">
-                    Home
+                   ACCUEIL
                 </a>
             </li>
             <li class="nav-item">
                 <a href="about.php" class="nav-link btn-outline-info">
-                    About Us
+                    A PROPOS DE NOUS
                 </a>
             </li>
             <li class="nav-item">
                 <a href="contactus.php" class="nav-link btn-outline-info">
-                    Contact Us
+                    CONTACTEZ NOUS
 
                 </a>
             </li>
 
         </ul>
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills" style="background-color:white">
             <!-- Show cart -->
             <li class="nav-item">
 
-                <button type="button" class="nav-link btn-outline-info" data-toggle="modal" data-target="#cart">Cart</button>
+                <button type="button" class="nav-link btn-outline-info" data-toggle="modal" data-target="#cart">Panier</button>
             </li>
             <li class="nav-item">
                 <a href="signup.php" class="nav-link btn-outline-info">
-                    Sign up
+                    S'INSCRIRE
                 </a>
             </li>
             <li class="nav-item">
 
                 <a href="login.php" class="nav-link btn-outline-success">
-                    Login
+                    S'IDENTIFIER
 
                 </a>
             </li>
@@ -111,17 +111,17 @@ if (!empty($_GET["action"])) {
             <form>
                 <div class="form-group">
                     <label for="emailInput"><br><br><br>
-                        Email Address:
+                        Adresse Email:
                     </label>
-                    <input type="email" class="form-control" aria-describedby="Email Address" id="emailInput" placeholder="Enter email">
+                    <input type="email" class="form-control" aria-describedby="Email Address" id="emailInput" placeholder="Entrer email">
                 </div>
                 <div class="form-group">
                     <label for="emailInput">
-                        Password:
+                        mot de passe:
                     </label>
-                    <input type="password" class="form-control" aria-describedby="Password" id="passwordInput" placeholder="Password">
+                    <input type="password" class="form-control" aria-describedby="Password" id="passwordInput" placeholder="entrer mot de passe">
                 </div>
-                <button type="submit" class="btn btn-outline-success">Login</button>
+                <button type="submit" class="btn btn-outline-success">S'IDENTIFIER</button>
             </form>
         </div>
     </div>
@@ -130,7 +130,7 @@ if (!empty($_GET["action"])) {
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Panier</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -138,7 +138,7 @@ if (!empty($_GET["action"])) {
                 <div class="modal-body">
                     <div id="shopping-cart">
 
-                        <a id="btnEmpty" href="index.php?action=empty">Empty Cart</a>
+                        <a id="btnEmpty" href="index.php?action=empty">Panier vide</a>
                         <?php
                         if (isset($_SESSION["cart_item"])) {
                             $total_quantity = 0;
@@ -183,15 +183,15 @@ if (!empty($_GET["action"])) {
                         <?php
                         } else {
                         ?>
-                            <div class="no-records">Your Cart is Empty</div>
+                            <div class="no-records">Votre panier est vide</div>
                         <?php
                         }
                         ?>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Order now</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary">Commandez maintenant</button>
                 </div>
             </div>
         </div>

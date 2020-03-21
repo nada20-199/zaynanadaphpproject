@@ -84,30 +84,30 @@ if (!empty($_GET["action"])) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
 </head>`
-
+<title>Meilleur Parfum</title>
 <body style="background-color:black;">
 
     <!-- nav bar -->
     <nav>
 
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center"  style="background-color:white;">
             <li class="nav-item">
-                <a class="nav-link active" href="cart.php">Cart</a>
+                <a class="nav-link active" href="cart.php">PANIER</a>
             </li>
     
             <li class="nav-item">
-                <a class="nav-link " href="login.php">Login</a>
+                <a class="nav-link " href="login.php">S'INSCRIRE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="register.php">Register</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link " href="contactus.php">Contact Us</a>
+                <a class="nav-link " href="register.php">REGISTRE</a>
             </li>
             
             <li class="nav-item">
-                <a class="nav-link " href="products.php">Products</a>
+                <a class="nav-link " href="contactus.php">CONTACTEZ-NOUS</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link " href="products.php">LES PRODUITS</a>
             </li>
         </ul>
 

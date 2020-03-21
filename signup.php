@@ -67,26 +67,26 @@ if (!empty($_GET["action"])) {
 
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <a href="#" class="nav"></a>
-        <ul class="nav mr-auto nav-tabs">
+        <ul class="nav mr-auto nav-tabs" style="background-color:white;">
             <li class="nav-item active">
                 <a href="index.php" class="nav-link btn-outline-info">
-                    Home
+                   ACCUEIL
                 </a>
             </li>
             <li class="nav-item">
                 <a href="about.php" class="nav-link btn-outline-info">
-                    About Us
+                    A PROPOS DE NOUS
                 </a>
             </li>
             <li class="nav-item">
                 <a href="contactus.php" class="nav-link btn-outline-info">
-                    Contact Us
+                    CONTACTEZ-NOUS
 
                 </a>
             </li>
 
         </ul>
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills" style="background-color:white;">
             <!-- Show cart -->
             <li class="nav-item">
 
@@ -94,13 +94,13 @@ if (!empty($_GET["action"])) {
             </li>
             <li class="nav-item">
                 <a href="signup.php" class="nav-link btn-outline-info">
-                    Sign up
+                    S'INSCRIRE
                 </a>
             </li>
             <li class="nav-item">
 
                 <a href="login.php" class="nav-link btn-outline-success">
-                    Login
+                    S'IDENTIFIER
 
                 </a>
             </li>
@@ -112,51 +112,51 @@ if (!empty($_GET["action"])) {
             <form>
                 <div class="form-group"><br><br><br>
                     <label for="fullNameInput">
-                        Full Name:
+                    Nom complet:
                     </label>
                     <div class="row">
                         <div class="col">
-                            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                            <input type="text" class="form-control" id="firstName" placeholder="Prénom" required>
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                            <input type="text" class="form-control" id="lastName" placeholder="Nom" required>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="usernameInput">Username:</label>
-                    <input type="text" class="form-control" aria-describedby="Username" id="usernameInput" placeholder="Username" required>
+                    <label for="usernameInput">Nom d'utilisateur:</label>
+                    <input type="text" class="form-control" aria-describedby="Username" id="usernameInput" placeholder="nom d'utilisateur" required>
                 </div>
                 <div class="form-group">
                     <label for="emailInput">
-                        Email Address:
+                        Adresse Email:
                     </label>
-                    <input type="email" class="form-control" aria-describedby="Email Address" id="emailInput" placeholder="Enter email" required>
+                    <input type="email" class="form-control" aria-describedby="Email Address" id="emailInput" placeholder="Entrer email" required>
                 </div>
                 <div class="form-group">
                     <label for="emailInput">
-                        Password:
+                        Mot de passe:
                     </label>
-                    <input type="password" class="form-control" aria-describedby="Password" id="passwordInput" placeholder="Password" required>
+                    <input type="password" class="form-control" aria-describedby="Password" id="passwordInput" placeholder="mot de passe" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="address" placeholder="Address" required>
+                    <input type="text" class="form-control" id="address" placeholder="Addresse" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="address2" placeholder="Address 2" required>
+                    <input type="text" class="form-control" id="address2" placeholder="Addresse 2" required>
                 </div>
 
                 <div class="form-group">
-                    <input type="text" class="form-control" id="city" placeholder="City" required>
+                    <input type="text" class="form-control" id="city" placeholder="Ville" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="state" placeholder="State" required>
+                    <input type="text" class="form-control" id="state" placeholder="Etat" required>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="zip" placeholder="zip" required>
                 </div>
 
-                <button type="submit" class="btn btn-outline-info">Sign Up</button>
+                <button type="submit" class="btn btn-outline-info">S'ISCRIRE</button>
             </form>
         </div>
     </div>
@@ -165,7 +165,7 @@ if (!empty($_GET["action"])) {
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Panier</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -173,7 +173,7 @@ if (!empty($_GET["action"])) {
                 <div class="modal-body">
                     <div id="shopping-cart">
 
-                        <a id="btnEmpty" href="index.php?action=empty">Empty Cart</a>
+                        <a id="btnEmpty" href="index.php?action=empty">Panier vide</a>
                         <?php
                         if (isset($_SESSION["cart_item"])) {
                             $total_quantity = 0;
@@ -218,15 +218,15 @@ if (!empty($_GET["action"])) {
                         <?php
                         } else {
                         ?>
-                            <div class="no-records">Your Cart is Empty</div>
+                            <div class="no-records">Votre panier est vide</div>
                         <?php
                         }
                         ?>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Order now</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary">Commandez-vous</button>
                 </div>
             </div>
         </div>

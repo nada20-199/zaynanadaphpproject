@@ -92,14 +92,14 @@ if (!empty($_GET["action"])) {
 
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Active link</a>
+                <a class="nav-link active" href="#">Lien actif</a>
             </li>
             <li class="nav-item">
-                <button type="button" class="nav-link" data-toggle="modal" data-target="#cart">Cart</button>
+                <button type="button" class="nav-link" data-toggle="modal" data-target="#cart">Panier</button>
 
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">Disabled link</a>
+                <a class="nav-link active" href="#">lien désactivé</a>
             </li>
         </ul>
      <!--disabled-->
@@ -109,7 +109,7 @@ if (!empty($_GET["action"])) {
 
     <div id="shopping-cart">
 
-        <a id="btnEmpty" href="index.php?action=empty">Empty Cart</a>
+        <a id="btnEmpty" href="index.php?action=empty">Panier vide</a>
         <?php
         if (isset($_SESSION["cart_item"])) {
             $total_quantity = 0;
@@ -158,7 +158,7 @@ if (!empty($_GET["action"])) {
         <?php
         } else {
         ?>
-            <div class="no-records">Your Cart is Empty</div>
+            <div class="no-records">Votre panier est vide</div>
         <?php
         }
         ?>

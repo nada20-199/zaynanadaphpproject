@@ -92,21 +92,21 @@ if (!empty($_GET["action"])) {
 
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" href="cart.php">Cart</a>
+                <a class="nav-link active" href="cart.php">PANIER</a>
             </li>
     
             <li class="nav-item">
-                <a class="nav-link active" href="login.php">Login</a>
+                <a class="nav-link active" href="login.php">S'INSCRIRE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="register.php">Register</a>
+                <a class="nav-link active" href="register.php">REGISTRE</a>
             </li>
             
             <li class="nav-item">
-                <a class="nav-link active" href="contactus.php">Contact Us</a>
+                <a class="nav-link active" href="contactus.php">CONTACTEZ-NOUS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="products.php">Products</a>
+                <a class="nav-link active" href="products.php">LES PRODUITS</a>
             </li>
         </ul>
 
@@ -118,7 +118,7 @@ if (!empty($_GET["action"])) {
 
   <!-- Items from database -->
   <div id="product-grid">
-        <div class="txt-heading" style="background-color:deeppink;"><h1>Products</h1></div>
+        <div class="txt-heading" style="background-color:deeppink;"><h1>Produits</h1></div>
         <?php
         // tblproduc is the table where all the articles are stored
 
@@ -134,7 +134,7 @@ if (!empty($_GET["action"])) {
                 // the html element filled dynamically with each element of $product_array
         ?>
                 <div class="product-item">
-                    <form method="post" style="color:deeppink;" action="index.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+                    <form method="post" style="color:deeppink;"  action="index.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
                         <div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"></div>
                         <div class="product-tile-footer">
                             <div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
