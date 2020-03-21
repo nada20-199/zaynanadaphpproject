@@ -158,17 +158,6 @@ if (!empty($_GET["action"])) {
     <!-- <img src="d.jpg" alt="ma photo" height="30%" width="35%"> -->
     <!-- <a href="o.jpg"> -->
     <!-- <img src="o.jpg" alt="ma photo" height="30%" width="32%"> -->
-
-    
-  
-
-
-    <!-- atlou7i koulchi fi 000webhost ou aykhdem lik  -->
-    <!-- ui daba ay fichier bedelti mennou kat7b9ay tlou7ih gha bou7dou machi koulchi  -->
-    <!-- daba m3a bedelti douk les image khwitihoum ou jme3tihoum atlou7i koulchi  -->
-    <!-- tal lik ou npasi lik kifach atdiri bach treddi hadchi dynamic  -->
-
-
 </body>
 
 </html>

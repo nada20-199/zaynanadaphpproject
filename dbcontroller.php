@@ -1,15 +1,8 @@
 <?php
 class DBController {
 	// // database host
-
-	// hadi hya la config ta3 lbd d server 00webhost
-	// ila knti bagha thostih local khasski tbedliha  ou tri lusername ou lpassword ou 
-	// ta3 lbd fi easyphp wella fi laragon fi laragon username houwa root ou lpass khawi 
-	//3ad fi dik database katktbi smeyt daatabas li creeti 
-	
 	//  Uncomment for depoloyment
-
-	  // private $host = "localhost";
+    // private $host = "localhost";
 	// // database user and password
 	   private $user = "id12902335_zaynada";
 	   private $password = "zaynadada";
